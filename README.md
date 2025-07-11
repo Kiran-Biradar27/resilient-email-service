@@ -71,7 +71,7 @@ resilient-email-service/
 └── README.md
 ```
 
-
+---
 ## 📌 Assumptions
 
 * No real emails are sent; both providers are **mocked**.
