@@ -1,117 +1,115 @@
-# resilient-email-service
-Resilient email sender with retry, fallback, rate limiting, and tests.
-Sure! Here's a complete, ready-to-copy **README.md** content formatted with proper Markdown, code blocks, and structure:
+Here’s a clean, professional, and complete `README.md` file you can copy-paste directly into your GitHub project:
 
 ---
 
-```markdown
-# 📧 Resilient Email Service
+````markdown
+# 📧 Resilient Email Sending Service
 
-A reliable and robust Node.js + TypeScript-based email service that includes:
-
-- ✅ Retry logic with exponential backoff  
-- 🔄 Fallback mechanism between multiple providers  
-- 🧠 Idempotency support to prevent duplicate sends  
-- 🚦 Rate limiting to avoid abuse  
-- 📊 In-memory status tracking  
-- 🧪 Unit tests with Jest  
+A resilient email sending service built with **TypeScript**, designed to ensure reliable email delivery using retry logic, fallback mechanisms, rate limiting, idempotency, and status tracking.
 
 ---
 
-## 🚀 Features
+## ✅ Features
 
-- **Retry with exponential backoff** – automatic retries on failure  
-- **Provider fallback** – send email using a secondary provider if the primary fails  
-- **Rate limiting** – restrict excessive email sends  
-- **Idempotent requests** – avoid duplicates using unique request IDs  
-- **Status tracking** – keep track of success/failure in memory  
-- **Test coverage** – robust test cases for all components  
+- ✅ **Retry Mechanism** with Exponential Backoff
+- ✅ **Fallback** Between Two Mock Email Providers
+- ✅ **Idempotency** to Prevent Duplicate Sends
+- ✅ **Rate Limiting** for Outbound Email Requests
+- ✅ **Status Tracking** for Email Attempts
+- 🔄 Circuit Breaker (Bonus)
+- 📝 Simple Logging
+- 📦 Basic Queue System
 
 ---
 
-## 📁 Project Structure
+## 🚀 Tech Stack
+
+- **Language:** TypeScript
+- **Test Framework:** Jest
+- **Node.js** runtime environment
+- Minimal external dependencies
+
+---
+
+## 🛠️ Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Kiran-Biradar27/resilient-email-service.git
+   cd resilient-email-service
+````
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the service**
+
+   ```bash
+   npm start
+   ```
+
+4. **Run tests**
+
+   ```bash
+   npm run test
+   ```
+
+---
+
+## 📂 Project Structure
 
 ```
-
 resilient-email-service/
 ├── src/
-│   ├── services/
-│   │   ├── EmailService.ts
-│   │   └── providers/
-│   │       ├── ProviderA.ts
-│   │       └── ProviderB.ts
+│   ├── EmailService.ts        # Core logic for sending email
+│   ├── providers/             # Mock providers A & B
+│   ├── types.ts               # Type definitions
+│   └── utils/                 # Helper functions
 ├── tests/
-│   └── EmailService.test.ts
+│   └── EmailService.test.ts   # Unit tests
 ├── package.json
-├── tsconfig.json
 └── README.md
-
-````
-
----
-
-## 🛠️ Setup Instructions
-
-1. **Clone the repository:**
-
-```bash
-git clone https://github.com/Kiran-Biradar27/resilient-email-service.git
-cd resilient-email-service
-````
-
-2. **Install dependencies:**
-
-```bash
-npm install
 ```
 
 ---
 
-## 🧪 Running Tests:
+## 📌 Assumptions
 
-```bash
-npm run test
-```
-
-> Make sure you have TypeScript and Jest configured properly.
-
----
-
-## 🧑‍💻 Usage Example
-
-```ts
-import { EmailService } from './src/services/EmailService';
-
-const emailService = new EmailService();
-
-const payload = {
-  to: 'user@example.com',
-  subject: 'Test Email',
-  body: 'This is a test message.',
-};
-
-const result = await emailService.sendEmail(payload);
-console.log(result); // { success: true, provider: 'ProviderA', attempts: 1 }
-```
+* No real emails are sent; both providers are **mocked**.
+* Emails are uniquely identified via a `messageId` for **idempotency**.
+* Rate limiting is **basic in-memory** (no Redis or DB).
+* Queue and circuit breaker are implemented in a simple, minimalistic way.
 
 ---
 
+## 📽️ Demo & Deployment
 
-
-## 👨‍💻 Author
-
-**Kiran Biradar**
-📧 Email: [kiransbiradar2713@gmail.com](mailto:kiransbiradar2713@gmail.com)
-🔗 GitHub: [@Kiran-Biradar27](https://github.com/Kiran-Biradar27)
+* **GitHub Repo:** [View here](https://github.com/Kiran-Biradar27/resilient-email-service)
+* **Screencast Demo:** *\[Will be shared separately]* 🎥
+* **API Deployment:** *\[Link to deployed endpoint]* 🌐
 
 ---
 
-## 📝 License
+## 🧪 Test Coverage
+
+* Mocked providers simulate success and failure scenarios.
+* Edge cases like max retries, rate limits, and provider failure are tested.
+
+---
+
+## 📋 License
 
 This project is licensed under the [MIT License](LICENSE).
 
+---
+
+## 🙌 Acknowledgements
+
+* This project was built as a part of a take-home assignment for showcasing resilient architecture and clean coding principles.
+
 ```
 
 ---
-
-
