@@ -96,13 +96,7 @@ console.log(result); // { success: true, provider: 'ProviderA', attempts: 1 }
 
 ---
 
-## 🔮 Future Enhancements
 
-* [ ] Add a REST API (Express.js)
-* [ ] Persistent logging to DB
-* [ ] OAuth-secured dashboard to view delivery stats
-
----
 
 ## 👨‍💻 Author
 
