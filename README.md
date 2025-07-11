@@ -86,7 +86,6 @@ resilient-email-service/
 
 * **GitHub Repo:** [View here](https://github.com/Kiran-Biradar27/resilient-email-service)
 * **Screencast Demo:** (https://drive.google.com/file/d/1cX73yHLZKgNc_v6NIEvdJPtbtlb7-v0R/view?usp=sharing) 🎥
-* **API Deployment:** *\[Link to deployed endpoint]* 🌐
 
 ---
 
