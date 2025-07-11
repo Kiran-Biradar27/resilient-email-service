@@ -1,6 +1,3 @@
-Here’s a clean, professional, and complete `README.md` file you can copy-paste directly into your GitHub project:
-
----
 
 ````markdown
 # 📧 Resilient Email Sending Service
