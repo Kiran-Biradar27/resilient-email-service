@@ -71,7 +71,6 @@ resilient-email-service/
 └── README.md
 ```
 
----
 
 ## 📌 Assumptions
 
@@ -105,7 +104,5 @@ This project is licensed under the [MIT License](LICENSE).
 ## 🙌 Acknowledgements
 
 * This project was built as a part of a take-home assignment for showcasing resilient architecture and clean coding principles.
-
-```
 
 ---
