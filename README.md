@@ -5,7 +5,7 @@ Sure! Here's a complete, ready-to-copy **README.md** content formatted with prop
 ---
 
 ```markdown
-# 📧 Resilient Email Service
+# 📧 Resilient Email Service:
 
 A reliable and robust Node.js + TypeScript-based email service that includes:
 
@@ -18,7 +18,7 @@ A reliable and robust Node.js + TypeScript-based email service that includes:
 
 ---
 
-## 🚀 Features
+## 🚀 Features:
 
 - **Retry with exponential backoff** – automatic retries on failure  
 - **Provider fallback** – send email using a secondary provider if the primary fails  
@@ -29,7 +29,7 @@ A reliable and robust Node.js + TypeScript-based email service that includes:
 
 ---
 
-## 📁 Project Structure
+## 📁 Project Structure:
 
 ```
 
@@ -50,7 +50,7 @@ resilient-email-service/
 
 ---
 
-## 🛠️ Setup Instructions
+## 🛠️ Setup Instructions:
 
 1. **Clone the repository:**
 
@@ -67,7 +67,7 @@ npm install
 
 ---
 
-## 🧪 Running Tests
+## 🧪 Running Tests:
 
 ```bash
 npm run test
@@ -77,7 +77,7 @@ npm run test
 
 ---
 
-## 🧑‍💻 Usage Example
+## 🧑‍💻 Usage Example:
 
 ```ts
 import { EmailService } from './src/services/EmailService';
@@ -96,7 +96,7 @@ console.log(result); // { success: true, provider: 'ProviderA', attempts: 1 }
 
 ---
 
-## 🔮 Future Enhancements
+## 🔮 Future Enhancements:
 
 * [ ] Add a REST API (Express.js)
 * [ ] Persistent logging to DB
@@ -104,7 +104,7 @@ console.log(result); // { success: true, provider: 'ProviderA', attempts: 1 }
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 Author:
 
 **Kiran Biradar**
 📧 Email: [kiransbiradar2713@gmail.com](mailto:kiransbiradar2713@gmail.com)
@@ -112,7 +112,7 @@ console.log(result); // { success: true, provider: 'ProviderA', attempts: 1 }
 
 ---
 
-## 📝 License
+## 📝 License:
 
 This project is licensed under the [MIT License](LICENSE).
 
