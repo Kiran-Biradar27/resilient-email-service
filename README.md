@@ -2,7 +2,7 @@
 ````markdown
 # 📧 Resilient Email Sending Service
 
-A resilient email sending service built with **TypeScript**, designed to ensure reliable email delivery using retry logic, fallback mechanisms, rate limiting, idempotency, and status tracking.
+A resilient email sending service built with TypeScript, designed to ensure reliable email delivery using retry logic, fallback mechanisms, rate limiting, idempotency, and status tracking.
 
 ---
 
@@ -45,7 +45,7 @@ A resilient email sending service built with **TypeScript**, designed to ensure 
 3. **Run the service**
 
    ```bash
-   npm start
+   npm run start
    ```
 
 4. **Run tests**
